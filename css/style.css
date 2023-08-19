@@ -1,0 +1,39 @@
+body{
+    background-color: #EEEFEF;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 49vh 60vh 8vh;
+    background-color: #EEEFEF;    
+}
+
+.cabecalho{  
+    grid-column: 1/4;    
+    overflow: hidden;
+}
+
+.bagagem{
+    grid-column: 1/4;
+    width: 100%;    
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.itens{      
+    align-items: center; 
+    background-color: #EEEFEF;    
+    border: none;   
+    height: 95%;
+    display: inline-block;
+
+}
+
+.rodape{
+    background-color: #2D90EB;
+    grid-column: 1/4;
+}
+  
