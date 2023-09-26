@@ -5,38 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"> 
 
 <title>Promoção</title>
 </head>
 <body>
     
-<div class="container">
+<div class="container_destinos_promocoes">
   <div class="cabecalho">
 
 <!--Inicio navBar-->
 
-<nav class="navbar navbar-expand-lg bg-primary fixed-top">
-  <a class="navbar-brand text-light" href="index.html">PorAi</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+  <a class="navbar-brand text-light" href="index.html">PorAí</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ">
-      <li class="nav-item active">
-        <a class="nav-link text-light" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="destino.html">Destino</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="promocoes.html">Promoção</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled text-light" href="contato.html">Contato</a>
-      </li>
-    </ul>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link text-light" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+      <a class="nav-item nav-link text-light" href="destino.html">Destino</a>
+      <a class="nav-item nav-link text-light" href="promocoes.html">Promoções</a>
+      <a class="nav-item nav-link text-light" href="contato.html">Contato</a>
+    </div>
   </div>
 </nav>
 <br>
@@ -45,7 +38,8 @@
   </div>
 
   <!--Promoções-->
-  <h1 style="text-align: center; margin: 30px; color: ;">Conheça nossas promoções</h1>
+  <h1 style="text-align: center; margin: 25px;" class="titulo">Conheça nossas promoções</h1>
+  <p style="text-align: center; margin-bottom: 10px; font-size: 20px; "class="titulo">Deslize para saber mais</p>
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 70%; margin: auto;">
       <div class="carousel-inner">   
@@ -70,9 +64,16 @@
   </div>
   <br><br>
 
-  <footer class="rodape bg-primary" style="text-align: center; color: white; padding: 20px;">
-    <p>&copy; copyright Cabeleireira Penha - 2023</p>
-  </footer>
+<!--Footer-->
+
+<footer class="rodape">
+  <p>&copy; copyright Jenifer Penha - 2023</p>
+    <DIV>
+    <img src="img/icons8-whatsapp-48 (1).png" alt="whatsApp">
+    <img src="img/icons8-instagram-48 (1).png" alt="Instagram">
+    <img src="img/icons8-facebook-novo-48.png" alt="facebook">
+    </DIV>
+</footer>
 </div>
 
 

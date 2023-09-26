@@ -5,112 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"> 
 
 <style>
 
-.container{
-    display: grid;
-    height: 220vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: #EEEFEF;    
-}
 
-#contatos{
-  grid-column: 1/2;
-    padding: 20px;
-}
-form{
-    margin: 40px 0;
-}
-form label, form legend{
-    display: block;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-.input-padrao{
-    display: block;
-    margin-bottom: 20px;
-    width: 80%;
-    padding: 10px 25px;
-}
-.checkbox{
-  margin: 20px 0; 
-}
-.enviar{
-    width: 30%;
-    padding: 15px 0;
-    background: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-}
-.enviar:hover{
-    background: darkorange;
-    transform: scale(1.1);
-}
-table{
-    margin: 20px 0 40px;
-    width: 100%;
-} 
-thead{
-    background: #555555;
-    color: white;
-    font-weight: bold;
-}
-td , th{
-    border: 1px solid #000000;
-    padding: 8px 15px;
-    
-}
-
-.img_contato{
-  grid-column: 2/3;
-  width: 100%;
-
-
-}
-
-.rodape{
-  grid-column: 1/3;
-}
 </style>
 
 <title>Contato</title>
 </head>
 <body>
     
-<div class="container">
   <div class="cabecalho">
 
      <!--Inicio navBar-->
 
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
-      <a class="navbar-brand text-light" href="index.html">PorAi</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+      <a class="navbar-brand text-light" href="index.html">PorAí</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item active">
-            <a class="nav-link text-light" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="destino.html">Destino</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="promocoes.html">Promoção</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled text-light" href="contato.html">Contato</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-light" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+          <a class="nav-item nav-link text-light" href="destino.html">Destino</a>
+          <a class="nav-item nav-link text-light" href="promocoes.html">Promoções</a>
+          <a class="nav-item nav-link text-light" href="contato.html">Contato</a>
+        </div>
       </div>
     </nav>
     <br>
@@ -119,8 +42,10 @@ td , th{
   </div>
 
 
-
+  <div class="container_contato">
 <section id="contatos">
+
+  <h1 class="titulo">Fale Conosco</h1>
 
   <form>
             <label for="NomeSobrenome">Nome e Sobrenome:</label>
@@ -183,9 +108,16 @@ td , th{
   <img src="img/img_formulario.png" alt="imagem formulário" srcset="">
 </div>
 
-<footer class="rodape bg-primary" style="text-align: center; color: white; padding: 20px;">
-  <p>&copy; copyright Cabeleireira Penha - 2023</p>
-</footer> 
+  <!--rodape-->    
+ 
+  <footer class="rodape">
+    <p>&copy; copyright Jenifer Penha - 2023</p>
+      <DIV>
+      <img src="img/icons8-whatsapp-48 (1).png" alt="whatsApp">
+      <img src="img/icons8-instagram-48 (1).png" alt="Instagram">
+      <img src="img/icons8-facebook-novo-48.png" alt="facebook">
+      </DIV>
+  </footer>
 
 </div>
 
